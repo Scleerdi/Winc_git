@@ -1,0 +1,68 @@
+    alphabet_list = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    country_list = []
+    x = 0;
+    y = 0;
+    for country in countries:
+        while (x < 25):
+            while (y < len(country)):
+                if (alphabet_list[x] == country[y]):
+                    alphabet_list[x] = 0;
+                    country_list.append(country)
+                    y += 1
+                x += 1
+        print(country_list)
+
+
+    while(j > 0 and country[j]):
+        i = len(alphabet_list)
+        while (i > 0):
+            if (country[j] == alphabet_list[i]):
+                print(alphabet_list[i])
+                reduced_c + alphabet_list[i]
+                alphabet_list = 0;
+            i -= 1
+        j -= 1
+
+	def diff_letters(country):
+    j = len(country) - 1
+    reduced_c = ""
+    alphabet_list = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    while(j > 0):
+        print(country[j])
+        i = len(alphabet_list) - 1
+        while (i > 0):
+            i -= 1
+        j -= 1
+    return (reduced_c)
+
+
+                    i += 1
+                if (i > 4):
+                    for letter in country:
+                        if (letter in alphabet_list):
+
+def alphabet_set(countries):
+    return_list = []
+    alphabet_list = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    i = 0;
+    for country in countries:
+        for letter in country:
+            if (letter in alphabet_list):
+                i += 1
+                if (i > 4):
+                    for letter in country:
+                        if (letter in alphabet_list):
+                            alphabet_list.remove(letter)
+                    i = 0
+                    return_list.append(country)
+    print(alphabet_list)
+    print(len(return_list))
+    print(return_list)
+    return(return_list)
+
+            if (vc > vowel_count(return_list[0])):
+            return_list[0] = country
+        elif (vc > vowel_count(return_list[1])):
+            return_list[1] = country
+        elif (vc > vowel_count(return_list[2])):
+            return_list[2] = country
